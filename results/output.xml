@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20151222 10:20:08.600" generator="Robot 2.9.2 (Python 2.7.10 on darwin)">
+<robot generated="20151223 09:39:33.643" generator="Robot 2.9.2 (Python 2.7.10 on darwin)">
 <suite source="/Users/Aruna/PycharmProjects/test1/target.robot" id="s1" name="Target">
 <kw type="setup" name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to given URL.</doc>
@@ -7,8 +7,8 @@
 <arg>${BASE_URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20151222 10:20:08.896" level="INFO">Opening browser 'chrome' to base url 'http://www.target.com'</msg>
-<status status="PASS" endtime="20151222 10:20:14.403" starttime="20151222 10:20:08.894"></status>
+<msg timestamp="20151223 09:39:33.890" level="INFO">Opening browser 'chrome' to base url 'http://www.target.com'</msg>
+<status status="PASS" endtime="20151223 09:39:37.716" starttime="20151223 09:39:33.889"></status>
 </kw>
 <test id="s1-t1" name="opening target browser">
 <kw name="Open Browser" library="Selenium2Library">
@@ -17,17 +17,17 @@
 <arg>http://www.target.com</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20151222 10:20:14.411" level="INFO">Opening browser 'chrome' to base url 'http://www.target.com'</msg>
-<status status="PASS" endtime="20151222 10:20:20.874" starttime="20151222 10:20:14.407"></status>
+<msg timestamp="20151223 09:39:37.721" level="INFO">Opening browser 'chrome' to base url 'http://www.target.com'</msg>
+<status status="PASS" endtime="20151223 09:39:42.334" starttime="20151223 09:39:37.720"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
 <arg>shop all categories</arg>
 </arguments>
-<status status="PASS" endtime="20151222 10:20:22.419" starttime="20151222 10:20:20.875"></status>
+<status status="PASS" endtime="20151223 09:39:42.805" starttime="20151223 09:39:42.337"></status>
 </kw>
-<status status="PASS" endtime="20151222 10:20:22.420" critical="yes" starttime="20151222 10:20:14.405"></status>
+<status status="PASS" endtime="20151223 09:39:42.805" critical="yes" starttime="20151223 09:39:37.717"></status>
 </test>
 <test id="s1-t2" name="Verifying links in target home page">
 <kw name="Element Text Should Be" library="Selenium2Library">
@@ -36,8 +36,8 @@
 <arg>jquery=#UserMenu</arg>
 <arg>sign in / account</arg>
 </arguments>
-<msg timestamp="20151222 10:20:22.426" level="INFO">Verifying element 'jquery=#UserMenu' contains exactly text 'sign in / account'.</msg>
-<status status="PASS" endtime="20151222 10:20:22.926" starttime="20151222 10:20:22.424"></status>
+<msg timestamp="20151223 09:39:42.810" level="INFO">Verifying element 'jquery=#UserMenu' contains exactly text 'sign in / account'.</msg>
+<status status="PASS" endtime="20151223 09:39:43.185" starttime="20151223 09:39:42.808"></status>
 </kw>
 <kw name="Element Should Contain" library="Selenium2Library">
 <doc>Verifies element identified by `locator` contains text `expected`.</doc>
@@ -45,8 +45,8 @@
 <arg>jquery=#ShopNavMenu &gt; li:nth-child(1) #mystoreText</arg>
 <arg>my store</arg>
 </arguments>
-<msg timestamp="20151222 10:20:22.929" level="INFO">Verifying element 'jquery=#ShopNavMenu &gt; li:nth-child(1) #mystoreText' contains text 'my store'.</msg>
-<status status="PASS" endtime="20151222 10:20:23.067" starttime="20151222 10:20:22.928"></status>
+<msg timestamp="20151223 09:39:43.188" level="INFO">Verifying element 'jquery=#ShopNavMenu &gt; li:nth-child(1) #mystoreText' contains text 'my store'.</msg>
+<status status="PASS" endtime="20151223 09:39:43.356" starttime="20151223 09:39:43.186"></status>
 </kw>
 <kw name="Element Text Should Be" library="Selenium2Library">
 <doc>Verifies element identified by `locator` exactly contains text `expected`.</doc>
@@ -54,8 +54,8 @@
 <arg>jquery=#ShopNavMenu &gt; li:nth-child(2) a</arg>
 <arg>weekly ad</arg>
 </arguments>
-<msg timestamp="20151222 10:20:23.069" level="INFO">Verifying element 'jquery=#ShopNavMenu &gt; li:nth-child(2) a' contains exactly text 'weekly ad'.</msg>
-<status status="PASS" endtime="20151222 10:20:23.209" starttime="20151222 10:20:23.068"></status>
+<msg timestamp="20151223 09:39:43.359" level="INFO">Verifying element 'jquery=#ShopNavMenu &gt; li:nth-child(2) a' contains exactly text 'weekly ad'.</msg>
+<status status="PASS" endtime="20151223 09:39:44.601" starttime="20151223 09:39:43.357"></status>
 </kw>
 <kw name="Element Text Should Be" library="Selenium2Library">
 <doc>Verifies element identified by `locator` exactly contains text `expected`.</doc>
@@ -63,8 +63,8 @@
 <arg>jquery=#ShopNavMenu &gt; li:nth-child(3) a</arg>
 <arg>gift cards</arg>
 </arguments>
-<msg timestamp="20151222 10:20:23.215" level="INFO">Verifying element 'jquery=#ShopNavMenu &gt; li:nth-child(3) a' contains exactly text 'gift cards'.</msg>
-<status status="PASS" endtime="20151222 10:20:23.390" starttime="20151222 10:20:23.210"></status>
+<msg timestamp="20151223 09:39:44.604" level="INFO">Verifying element 'jquery=#ShopNavMenu &gt; li:nth-child(3) a' contains exactly text 'gift cards'.</msg>
+<status status="PASS" endtime="20151223 09:39:44.734" starttime="20151223 09:39:44.603"></status>
 </kw>
 <kw name="Element Text Should Be" library="Selenium2Library">
 <doc>Verifies element identified by `locator` exactly contains text `expected`.</doc>
@@ -72,8 +72,8 @@
 <arg>jquery=#ShopNavMenu &gt; li:nth-child(4) a</arg>
 <arg>lists / registries</arg>
 </arguments>
-<msg timestamp="20151222 10:20:23.393" level="INFO">Verifying element 'jquery=#ShopNavMenu &gt; li:nth-child(4) a' contains exactly text 'lists / registries'.</msg>
-<status status="PASS" endtime="20151222 10:20:23.662" starttime="20151222 10:20:23.391"></status>
+<msg timestamp="20151223 09:39:44.738" level="INFO">Verifying element 'jquery=#ShopNavMenu &gt; li:nth-child(4) a' contains exactly text 'lists / registries'.</msg>
+<status status="PASS" endtime="20151223 09:39:45.056" starttime="20151223 09:39:44.735"></status>
 </kw>
 <kw name="Element Text Should Be" library="Selenium2Library">
 <doc>Verifies element identified by `locator` exactly contains text `expected`.</doc>
@@ -81,16 +81,16 @@
 <arg>jquery=#ShopNavMenu &gt; li:nth-child(5) a</arg>
 <arg>REDcard</arg>
 </arguments>
-<msg timestamp="20151222 10:20:23.664" level="INFO">Verifying element 'jquery=#ShopNavMenu &gt; li:nth-child(5) a' contains exactly text 'REDcard'.</msg>
-<status status="PASS" endtime="20151222 10:20:23.754" starttime="20151222 10:20:23.663"></status>
+<msg timestamp="20151223 09:39:45.058" level="INFO">Verifying element 'jquery=#ShopNavMenu &gt; li:nth-child(5) a' contains exactly text 'REDcard'.</msg>
+<status status="PASS" endtime="20151223 09:39:45.315" starttime="20151223 09:39:45.057"></status>
 </kw>
-<status status="PASS" endtime="20151222 10:20:23.755" critical="yes" starttime="20151222 10:20:22.422"></status>
+<status status="PASS" endtime="20151223 09:39:45.316" critical="yes" starttime="20151223 09:39:42.807"></status>
 </test>
 <kw type="teardown" name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20151222 10:20:24.164" starttime="20151222 10:20:23.758"></status>
+<status status="PASS" endtime="20151223 09:39:45.605" starttime="20151223 09:39:45.321"></status>
 </kw>
-<status status="PASS" endtime="20151222 10:20:24.166" starttime="20151222 10:20:08.604"></status>
+<status status="PASS" endtime="20151223 09:39:45.606" starttime="20151223 09:39:33.647"></status>
 </suite>
 <statistics>
 <total>

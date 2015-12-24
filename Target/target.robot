@@ -28,3 +28,4 @@ Verifying links in target home page
     #element text should be  jquery=#OpenStorePopup span:first  ${str}
 
 
+
