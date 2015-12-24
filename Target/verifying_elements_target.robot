@@ -24,3 +24,4 @@ verifying elements in catagories
     page should contain link  all clothing
     page should contain link  women's clothing
     page should contain link  men's clothing
+    #
