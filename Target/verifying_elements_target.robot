@@ -21,7 +21,8 @@ verifying elements in catagories
     sleep  2
     mouse over  //html/body/div[3]/div/div[1]/div[4]/div[1]/ul/li[2]/span/a
     sleep  2
-    page should contain link  all clothing
-    page should contain link  women's clothing
-    page should contain link  men's clothing
+    element should not be visible  link=all clothing
+    element should not be visible  link=women's clothing
+    element should not be visible  link=men's clothing
     #
+
