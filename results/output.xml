@@ -1,96 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20151223 09:39:33.643" generator="Robot 2.9.2 (Python 2.7.10 on darwin)">
-<suite source="/Users/Aruna/PycharmProjects/test1/target.robot" id="s1" name="Target">
+<robot generated="20151223 21:13:20.788" generator="Robot 2.9.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/Aruna/PycharmProjects/test1/Target/verifying_elements_target.robot" id="s1" name="Verifying Elements Target">
 <kw type="setup" name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to given URL.</doc>
 <arguments>
 <arg>${BASE_URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20151223 09:39:33.890" level="INFO">Opening browser 'chrome' to base url 'http://www.target.com'</msg>
-<status status="PASS" endtime="20151223 09:39:37.716" starttime="20151223 09:39:33.889"></status>
+<msg timestamp="20151223 21:13:21.026" level="INFO">Opening browser 'firefox' to base url 'http://www.target.com'</msg>
+<status status="PASS" endtime="20151223 21:13:25.723" starttime="20151223 21:13:21.024"></status>
 </kw>
 <test id="s1-t1" name="opening target browser">
-<kw name="Open Browser" library="Selenium2Library">
-<doc>Opens a new browser instance to given URL.</doc>
-<arguments>
-<arg>http://www.target.com</arg>
-<arg>chrome</arg>
-</arguments>
-<msg timestamp="20151223 09:39:37.721" level="INFO">Opening browser 'chrome' to base url 'http://www.target.com'</msg>
-<status status="PASS" endtime="20151223 09:39:42.334" starttime="20151223 09:39:37.720"></status>
-</kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
 <arg>shop all categories</arg>
 </arguments>
-<status status="PASS" endtime="20151223 09:39:42.805" starttime="20151223 09:39:42.337"></status>
+<status status="PASS" endtime="20151223 21:13:29.189" starttime="20151223 21:13:25.726"></status>
 </kw>
-<status status="PASS" endtime="20151223 09:39:42.805" critical="yes" starttime="20151223 09:39:37.717"></status>
+<status status="PASS" endtime="20151223 21:13:29.190" critical="yes" starttime="20151223 21:13:25.724"></status>
 </test>
-<test id="s1-t2" name="Verifying links in target home page">
-<kw name="Element Text Should Be" library="Selenium2Library">
-<doc>Verifies element identified by `locator` exactly contains text `expected`.</doc>
+<test id="s1-t2" name="verifying elements in catagories">
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
 <arguments>
-<arg>jquery=#UserMenu</arg>
-<arg>sign in / account</arg>
+<arg>//html/body/div[3]/div/div[1]/div[4]/div[1]/ul/li[1]/span/a</arg>
 </arguments>
-<msg timestamp="20151223 09:39:42.810" level="INFO">Verifying element 'jquery=#UserMenu' contains exactly text 'sign in / account'.</msg>
-<status status="PASS" endtime="20151223 09:39:43.185" starttime="20151223 09:39:42.808"></status>
+<msg timestamp="20151223 21:13:29.194" level="INFO">Simulating Mouse Over on element '//html/body/div[3]/div/div[1]/div[4]/div[1]/ul/li[1]/span/a'</msg>
+<status status="PASS" endtime="20151223 21:13:29.311" starttime="20151223 21:13:29.193"></status>
 </kw>
-<kw name="Element Should Contain" library="Selenium2Library">
-<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
 <arguments>
-<arg>jquery=#ShopNavMenu &gt; li:nth-child(1) #mystoreText</arg>
-<arg>my store</arg>
+<arg>all clothing</arg>
 </arguments>
-<msg timestamp="20151223 09:39:43.188" level="INFO">Verifying element 'jquery=#ShopNavMenu &gt; li:nth-child(1) #mystoreText' contains text 'my store'.</msg>
-<status status="PASS" endtime="20151223 09:39:43.356" starttime="20151223 09:39:43.186"></status>
+<status status="PASS" endtime="20151223 21:13:29.445" starttime="20151223 21:13:29.312"></status>
 </kw>
-<kw name="Element Text Should Be" library="Selenium2Library">
-<doc>Verifies element identified by `locator` exactly contains text `expected`.</doc>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
 <arguments>
-<arg>jquery=#ShopNavMenu &gt; li:nth-child(2) a</arg>
-<arg>weekly ad</arg>
+<arg>women's clothing</arg>
 </arguments>
-<msg timestamp="20151223 09:39:43.359" level="INFO">Verifying element 'jquery=#ShopNavMenu &gt; li:nth-child(2) a' contains exactly text 'weekly ad'.</msg>
-<status status="PASS" endtime="20151223 09:39:44.601" starttime="20151223 09:39:43.357"></status>
+<status status="PASS" endtime="20151223 21:13:29.477" starttime="20151223 21:13:29.446"></status>
 </kw>
-<kw name="Element Text Should Be" library="Selenium2Library">
-<doc>Verifies element identified by `locator` exactly contains text `expected`.</doc>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
 <arguments>
-<arg>jquery=#ShopNavMenu &gt; li:nth-child(3) a</arg>
-<arg>gift cards</arg>
+<arg>men's clothing</arg>
 </arguments>
-<msg timestamp="20151223 09:39:44.604" level="INFO">Verifying element 'jquery=#ShopNavMenu &gt; li:nth-child(3) a' contains exactly text 'gift cards'.</msg>
-<status status="PASS" endtime="20151223 09:39:44.734" starttime="20151223 09:39:44.603"></status>
+<status status="PASS" endtime="20151223 21:13:29.512" starttime="20151223 21:13:29.477"></status>
 </kw>
-<kw name="Element Text Should Be" library="Selenium2Library">
-<doc>Verifies element identified by `locator` exactly contains text `expected`.</doc>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
 <arguments>
-<arg>jquery=#ShopNavMenu &gt; li:nth-child(4) a</arg>
-<arg>lists / registries</arg>
+<arg>2</arg>
 </arguments>
-<msg timestamp="20151223 09:39:44.738" level="INFO">Verifying element 'jquery=#ShopNavMenu &gt; li:nth-child(4) a' contains exactly text 'lists / registries'.</msg>
-<status status="PASS" endtime="20151223 09:39:45.056" starttime="20151223 09:39:44.735"></status>
+<msg timestamp="20151223 21:13:31.514" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20151223 21:13:31.515" starttime="20151223 21:13:29.513"></status>
 </kw>
-<kw name="Element Text Should Be" library="Selenium2Library">
-<doc>Verifies element identified by `locator` exactly contains text `expected`.</doc>
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
 <arguments>
-<arg>jquery=#ShopNavMenu &gt; li:nth-child(5) a</arg>
-<arg>REDcard</arg>
+<arg>//html/body/div[3]/div/div[1]/div[4]/div[1]/ul/li[2]/span/a</arg>
 </arguments>
-<msg timestamp="20151223 09:39:45.058" level="INFO">Verifying element 'jquery=#ShopNavMenu &gt; li:nth-child(5) a' contains exactly text 'REDcard'.</msg>
-<status status="PASS" endtime="20151223 09:39:45.315" starttime="20151223 09:39:45.057"></status>
+<msg timestamp="20151223 21:13:31.517" level="INFO">Simulating Mouse Over on element '//html/body/div[3]/div/div[1]/div[4]/div[1]/ul/li[2]/span/a'</msg>
+<status status="PASS" endtime="20151223 21:13:31.703" starttime="20151223 21:13:31.516"></status>
 </kw>
-<status status="PASS" endtime="20151223 09:39:45.316" critical="yes" starttime="20151223 09:39:42.807"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20151223 21:13:33.708" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20151223 21:13:33.710" starttime="20151223 21:13:31.703"></status>
+</kw>
+<kw name="Page Should Contain Link" library="Selenium2Library">
+<doc>Verifies link identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>all clothing</arg>
+</arguments>
+<msg timestamp="20151223 21:13:33.760" level="INFO">Current page contains link 'all clothing'.</msg>
+<status status="PASS" endtime="20151223 21:13:33.761" starttime="20151223 21:13:33.711"></status>
+</kw>
+<kw name="Page Should Contain Link" library="Selenium2Library">
+<doc>Verifies link identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>women's clothing</arg>
+</arguments>
+<msg timestamp="20151223 21:13:33.794" level="INFO">Current page contains link 'women's clothing'.</msg>
+<status status="PASS" endtime="20151223 21:13:33.795" starttime="20151223 21:13:33.761"></status>
+</kw>
+<kw name="Page Should Contain Link" library="Selenium2Library">
+<doc>Verifies link identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>men's clothing</arg>
+</arguments>
+<msg timestamp="20151223 21:13:33.839" level="INFO">Current page contains link 'men's clothing'.</msg>
+<status status="PASS" endtime="20151223 21:13:33.840" starttime="20151223 21:13:33.796"></status>
+</kw>
+<status status="PASS" endtime="20151223 21:13:33.841" critical="yes" starttime="20151223 21:13:29.192"></status>
 </test>
 <kw type="teardown" name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20151223 09:39:45.605" starttime="20151223 09:39:45.321"></status>
+<status status="PASS" endtime="20151223 21:13:33.985" starttime="20151223 21:13:33.842"></status>
 </kw>
-<status status="PASS" endtime="20151223 09:39:45.606" starttime="20151223 09:39:33.647"></status>
+<status status="PASS" endtime="20151223 21:13:33.986" starttime="20151223 21:13:20.792"></status>
 </suite>
 <statistics>
 <total>
@@ -100,7 +114,7 @@
 <tag>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="Target" pass="2">Target</stat>
+<stat fail="0" id="s1" name="Verifying Elements Target" pass="2">Verifying Elements Target</stat>
 </suite>
 </statistics>
 <errors>
