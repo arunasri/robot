@@ -22,7 +22,10 @@ verifying links in ebay
     element should be visible  //*[@id="mainContent"]/div[3]/ul/li[1]/ul/li[4]/a  Home Arts & Crafts
     element should be visible  //*[@id="mainContent"]/div[3]/ul/li[1]/ul/li[5]/a  Shop All
 
-
-
-
-
+Verifying Scrapbooking links
+    mouse over  //*[@id="mainContent"]/div[3]/ul/li[1]/ul/li[1]/a
+    Sleep  1s
+    element should be visible  //*[@id="mainContent"]/div[3]/ul/li[1]/ul/li[1]/ul/li[1]/a  Paper Crafts
+    element should be visible  //*[@id="mainContent"]/div[3]/ul/li[1]/ul/li[1]/ul/li[2]/a  Scrapbooking Tools
+    element should be visible  //*[@id="mainContent"]/div[3]/ul/li[1]/ul/li[1]/ul/li[3]/a  Scrapbooking & Paper Pages
+    element should be visible  //*[@id="mainContent"]/div[3]/ul/li[1]/ul/li[1]/ul/li[4]/a  Organizers & Carriers
