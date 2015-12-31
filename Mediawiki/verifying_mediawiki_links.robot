@@ -12,29 +12,29 @@ opening browser
     wait until page contains  MediaWiki
 
 verifying links in mediawiki browser
-
 #Main page label
-    element should contain  //*[@id="n-mainpage-description"]/a  Main page
-    element should contain  //*[@id="n-mw-download"]/a  Get MediaWiki
-    element should contain  //*[@id="n-mw-extensions"]/a  Get extensions
-    element should contain  //*[@id="n-blog-text"]/a  Tech blog
-    element should contain  //*[@id="n-mw-contribute"]/a  Contribute
+    [Tags]  Ok
+    element should contain     //*[@id="mw-panel"]/div[2]//li[1]/a   Main page
+    element should contain     //*[@id="mw-panel"]/div[2]//li[2]/a   Get MediaWiki
+    element should contain     //*[@id="mw-panel"]/div[2]//li[3]/a   Get extensions
+    element should contain     //*[@id="mw-panel"]/div[2]//li[4]/a   Tech blog
+    element should contain     //*[@id="mw-panel"]/div[2]//li[5]/a   Contribute
 
 #Support label
-    element should contain  //*[@id="p-support-label"]  Support
-    element should contain  //*[@id="n-help"]/a  User help
-    element should contain  //*[@id="n-mw-faq"]/a  FAQ
-    element should contain  //*[@id="n-mw-manual"]/a  Technical manual
-    element should contain  //*[@id="n-mw-supportdesk"]/a  Support desk
-    element should contain  //*[@id="n-mw-communication"]/a  Communication
+    element should contain  //*[@id="mw-panel"]/div[3]/h3        Support
+    element should contain  //*[@id="mw-panel"]/div[3]//li[1]/a  User help
+    element should contain  //*[@id="mw-panel"]/div[3]//li[2]/a  FAQ
+    element should contain  //*[@id="mw-panel"]/div[3]//li[3]/a  Technical manual
+    element should contain  //*[@id="mw-panel"]/div[3]//li[4]/a  Support desk
+    element should contain  //*[@id="mw-panel"]/div[3]//li[5]/a  Communication
 
 #Development label
-    element should contain  //*[@id="p-development-label"]  Development
-    element should contain  //*[@id="n-mw-bugtracker"]/a  Bug tracker
-    element should contain  //*[@id="n-mw-repo-browse"]/a  Code repository
-    element should contain  //*[@id="n-phpdoc"]/a  Code docs
-    element should contain  //*[@id="n-svn-statistics"]/a  Statistics
-    element should contain  //*[@id="n-mw-wikimedia-engineering"]/a  Wikimedia engineering
+    element should contain  //*[@id="mw-panel"]/div[4]/h3        Development
+    element should contain  //*[@id="mw-panel"]/div[4]//li[1]/a  Bug tracker
+    element should contain  //*[@id="mw-panel"]/div[4]//li[2]/a  Code repository
+    element should contain  //*[@id="mw-panel"]/div[4]//li[3]/a  Code docs
+    element should contain  //*[@id="mw-panel"]/div[4]//li[4]/a  Statistics
+    element should contain  //*[@id="mw-panel"]/div[4]//li[5]/a  Wikimedia engineering
 
 #mainpage links
     element should contain  //*[@id="mainpage_sitelinks"]/p/b[1]/a  About this site
