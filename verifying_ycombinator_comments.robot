@@ -9,7 +9,9 @@ ${BROWSER}  chrome
 
 *** Test Cases ***
 opening Browser
+    [Tags]      Ok
     wait until page contains  Hacker News
+
 #verifying comments count
     ${COUNT}  get matching xpath count  //*[@id="hnmain"]/tbody/tr[3]/td/table/tbody//td[2]/a[2][contains(text(), "comment")]
     log to console   ${COUNT}
