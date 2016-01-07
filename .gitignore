@@ -1,3 +1,7 @@
 .idea/
 /results/
 results/
+.DS_Store
+wiki/.DS_Store
+ycombinator/.DS_Store
+
